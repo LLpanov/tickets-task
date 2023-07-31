@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": [
+      "off"
+    ],
+    "no-console": "warn",
+    "no-unused-vars": [
+      "off",
+      {
+        "argsIgnorePattern": "req|res|next|val"
+      }
+    ],
+    "func-names": "off"
+  }
+}
